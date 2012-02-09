@@ -13,7 +13,7 @@ class Auth {
 	
 	function __construct($var) {
 
-		echo "<br>YAY GODDAMNIT YAY I SAID <br>";
+		echo "<br>YAY I SAY <br>";
 
 		/**
 		 * setup the database connection/connection type
