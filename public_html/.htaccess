@@ -1,0 +1,14 @@
+RewriteEngine On
+RewriteCond %{REQUEST_URI} !^/_assets.*
+RewriteCond %{REQUEST_URI} !^/_examples.*
+RewriteCond %{REQUEST_URI} !^/_mysql.*
+RewriteCond %{REQUEST_URI} !^/common.*
+RewriteCond %{REQUEST_URI} !^/load.*
+RewriteCond %{REQUEST_URI} !^/download.*
+RewriteRule  (.*)  teletraan.php [PT] 
+<Files load>
+ Forcetype application/x-httpd-php
+</Files>
+<Files download>
+ Forcetype application/x-httpd-php
+</Files>
